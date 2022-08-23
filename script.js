@@ -58,7 +58,7 @@ function newGame(container) {
 
   natureBtn.addEventListener('click',() => {
     container.innerHTML = ''
-    cardsArray =  ['<i class="fa-solid fa-sun"></i>. Արև', '<i class="fa-solid fa-sun"></i>. Արև', '<i class="fa-solid fa-moon"></i>. Լուսին', '<i class="fa-solid fa-cloud"></i>. Ամպ', '<i class="fa-solid fa-tree"></i>. Ծառ',  '<i class="fa-solid fa-star"></i>. Աստղ', '<i class="fa-brands fa-skyatlas"></i>. Երկինք', '<i class="fa-solid fa-water"></i>. Ծով', '<i class="fa-solid fa-person-swimming"></i>... Գետ','<i class="fa-solid fa-moon"></i>. Լուսին', '<i class="fa-solid fa-cloud"></i>. Ամպ', '<i class="fa-solid fa-tree"></i>. Ծառ', '<i class="fa-solid fa-star"></i>. Աստղ', '<i class="fa-brands fa-skyatlas"></i>. Երկինք', '<i class="fa-solid fa-water"></i>. Ծով', '<i class="fa-solid fa-person-swimming"></i>... Գետ' ];
+    cardsArray =  ['Արև', 'Արև', '<Լուսին', 'Ամպ', 'Ծառ',  'Աստղ', 'Երկինք', 'Ծով', 'Գետ','Լուսին', 'Ամպ', 'Ծառ', 'Աստղ', 'Երկինք', 'Ծով', 'Գետ' ];
     const cardsNewArray = [];
     cardsArray = cardsArray.sort(() => Math.random() - .5)
   
@@ -69,7 +69,7 @@ function newGame(container) {
 
   transportBtn.addEventListener('click', ()=> {
     container.innerHTML = ''
-    cardsArray =  ['|<i class="fa-solid fa-plane-up"></i>| Օդանավ', '|<i class="fa-solid fa-plane-up"></i>| Օդանավ', '-<i class="fa-solid fa-train-subway"></i>- Գնացք', '-<i class="fa-solid fa-train-subway"></i>- Գնացք', '<i class="fa-solid fa-car-side"></i> Ավտոմեքենա', '<i class="fa-solid fa-car-side"></i> Ավտոմեքենա', '<i class="fa-solid fa-bus"></i>~ Ավտոբուս', '<i class="fa-solid fa-bus"></i>~ Ավտոբուս', '<i class="fa-solid fa-bicycle"></i>... Հեծանիվ','<i class="fa-solid fa-bicycle"></i>... Հեծանիվ', '~<i class="fa-solid fa-ship"></i>~ Նավ', '~<i class="fa-solid fa-ship"></i>~ Նավ', '<i class="fa-solid fa-truck"></i>~ Բեռնատար', '<i class="fa-solid fa-truck"></i>~ Բեռնատար', '<i class="fa-solid fa-helicopter"></i>~ Ինքնաթիռ', '<i class="fa-solid fa-helicopter"></i>~ Ինքնաթիռ' ];
+    cardsArray =  ['Օդանավ', 'Օդանավ', 'Գնացք', 'Գնացք', 'Ավտոմեքենա', 'Ավտոմեքենա', 'Ավտոբուս', 'Ավտոբուս', 'Հեծանիվ','Հեծանիվ', 'Նավ', 'Նավ', 'Բեռնատար', 'Բեռնատար', 'Ինքնաթիռ', 'Ինքնաթիռ'];
     const cardsNewArray = [];
     cardsArray = cardsArray.sort(() => Math.random() - .5)
   
@@ -80,7 +80,7 @@ function newGame(container) {
 
   animalsBtn.addEventListener('click', ()=> {
     container.innerHTML = ''
-    cardsArray =  ['<i class="fa-solid fa-dog"></i>. Շուն', '<i class="fa-solid fa-dog"></i>. Շուն', '<i class="fa-solid fa-cat"></i>. Կատու', '<i class="fa-solid fa-cat"></i>. Կատու', '<i class="fa-solid fa-dragon"></i>. Վիշապ', '<i class="fa-solid fa-dragon"></i>. Վիշապ','<i class="fa-solid fa-horse"></i>. Ձի', '<i class="fa-solid fa-horse"></i>. Ձի', '<i class="fa-solid fa-fish-fins"></i>. Ձուկ','<i class="fa-solid fa-fish-fins"></i>. Ձուկ', '<i class="fa-solid fa-dove"></i>. Աղավնի', '<i class="fa-solid fa-dove"></i>. Աղավնի', '<i class="fa-solid fa-frog"></i>. Գորտ', '<i class="fa-solid fa-frog"></i>. Գորտ', '<i class="fa-solid fa-spider"></i>. Սարդ', '<i class="fa-solid fa-spider"></i>. Սարդ' ];
+    cardsArray =  ['Շուն', 'Շուն', 'Կատու', 'Կատու', 'Վիշապ', 'Վիշապ','Ձի', 'Ձի', 'Ձուկ','Ձուկ', 'Աղավնի', 'Աղավնի', 'Գորտ', 'Գորտ', 'Սարդ', 'Սարդ'];
     const cardsNewArray = [];
     cardsArray = cardsArray.sort(() => Math.random() - .5)
   
