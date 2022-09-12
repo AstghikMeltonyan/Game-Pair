@@ -39,6 +39,8 @@ class Card {
 
 function newGame(container) {
   let cardsArray ;
+  const cardsNewArray = [];
+
   const natureBtn = document.createElement('button');
   const transportBtn = document.createElement('button');
   const animalsBtn = document.createElement('button');
@@ -58,8 +60,7 @@ function newGame(container) {
 
   natureBtn.addEventListener('click',() => {
     container.innerHTML = ''
-    cardsArray =  ['Արև', 'Արև', '<Լուսին', 'Ամպ', 'Ծառ',  'Աստղ', 'Երկինք', 'Ծով', 'Գետ','Լուսին', 'Ամպ', 'Ծառ', 'Աստղ', 'Երկինք', 'Ծով', 'Գետ' ];
-    const cardsNewArray = [];
+    cardsArray =  ['Արև', 'Արև', 'Լուսին', 'Ամպ', 'Ծառ',  'Աստղ', 'Երկինք', 'Ծով', 'Գետ','Լուսին', 'Ամպ', 'Ծառ', 'Աստղ', 'Երկինք', 'Ծով', 'Գետ' ];
     cardsArray = cardsArray.sort(() => Math.random() - .5)
   
     for(let number of cardsArray) {
@@ -70,7 +71,6 @@ function newGame(container) {
   transportBtn.addEventListener('click', ()=> {
     container.innerHTML = ''
     cardsArray =  ['Օդանավ', 'Օդանավ', 'Գնացք', 'Գնացք', 'Ավտոմեքենա', 'Ավտոմեքենա', 'Ավտոբուս', 'Ավտոբուս', 'Հեծանիվ','Հեծանիվ', 'Նավ', 'Նավ', 'Բեռնատար', 'Բեռնատար', 'Ինքնաթիռ', 'Ինքնաթիռ'];
-    const cardsNewArray = [];
     cardsArray = cardsArray.sort(() => Math.random() - .5)
   
     for(let number of cardsArray) {
@@ -81,7 +81,6 @@ function newGame(container) {
   animalsBtn.addEventListener('click', ()=> {
     container.innerHTML = ''
     cardsArray =  ['Շուն', 'Շուն', 'Կատու', 'Կատու', 'Վիշապ', 'Վիշապ','Ձի', 'Ձի', 'Ձուկ','Ձուկ', 'Աղավնի', 'Աղավնի', 'Գորտ', 'Գորտ', 'Սարդ', 'Սարդ'];
-    const cardsNewArray = [];
     cardsArray = cardsArray.sort(() => Math.random() - .5)
   
     for(let number of cardsArray) {
@@ -117,6 +116,10 @@ function newGame(container) {
         firstCard = null;
         secondCard = null;
       }
+    }
+
+    if (document.querySelectorAll('.card.success').length === cardsNewArray.length) {
+      container.innerHTML += '<div class="text">Դուք հաղթեցիք!</div>';
     }
   }
 }

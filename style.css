@@ -59,8 +59,8 @@
 }
 
 .card.success {
-  background-color: rgb(128, 232, 255);
-  color: rgb(1, 1, 105);
+  background-color: rgba(81, 250, 81, 0.43);
+  color: rgb(12, 55, 0);
   transform: scale(0.95);
 }
 
@@ -82,6 +82,16 @@
 
 .btn:hover {
   box-shadow: .5rem -.5rem  1rem rgb(0,0,0,0.3);
+}
+
+.text {
+  width: 30%;
+  font-size: normal;
+  font-weight: 700;
+  color: rgb(0, 54, 8);
+  padding: 10px 5px;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 54, 8);
 }
 
 @media (max-width: 900px) {
